@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>File Compressor</title>
+
+    <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel='stylesheet' href='styles.css'>
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+
+<body>
+    <div class="container my-5">
+        <h1 id="heading" class="text-center">Compress your text files using Huffmann File Compression</h1>
+        
+        <div class="card mx-auto my-4 p-4" id="step1">
+            <h2 class="text-center">Upload a Text File</h2>
+            <div class="text-center">
+                <i class="far fa-file-alt fa-5x mb-3"></i>
+                <input class="form-control mb-3" type="file" id="uploadfile">
+                <input class="btn btn-outline-success" type="button" id="submitbtn" value="Submit">
+            </div>
+        </div>
+        
+        <div class="card mx-auto my-4 p-4" id="step2">
+            <h2 class="text-center">Select Action</h2>
+            <div class="text-center">
+                <i class="far fa-file-archive fa-5x mb-3"></i>
+                <div>
+                    <button type="button" id="encode" class="btn btn-primary mx-2">Compress</button>
+                    <button type="button" id="decode" class="btn btn-primary mx-2">De-Compress</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card mx-auto my-4 p-4" id="step3"></div>
+        
+        <button id="startagain" class="btn btn-info btn-lg d-block mx-auto my-4" type="button" onclick="location.reload()">Click here to compress/decompress another file</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src='script.js'></script>
+</body>
+
+</html>
